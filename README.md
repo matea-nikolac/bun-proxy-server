@@ -1,6 +1,6 @@
 # solution-engineer-test
 
-Nous devons aider l'équipe pour une démo client, ils utilisent une technologie qui n'est pas courante: [Bun](https://bun.sh/)
+Nous devons aider l'équipe sales pour une démo client, ils utilisent une technologie qui n'est pas courante: [Bun](https://bun.sh/)
 
 Il va falloir l'installer et apprendre à l'utiliser pour intégrer notre solution
 
