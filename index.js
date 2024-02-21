@@ -2,10 +2,9 @@
 import { file } from 'bun'
 import { appendFile, mkdir } from 'node:fs/promises'
 import fs from 'fs'
+import dictionary from './dictionary.json'
 
 const host = 'www.dow.com'
-
-
 
 const server = Bun.serve({
   port: 36107,
@@ -21,7 +20,20 @@ const server = Bun.serve({
 
         // send the HTML content via Response
         if (request.url === 'http://localhost:36107/') {
-          return new Response(content, {
+          let htmlContent = content
+
+          //! part 2
+          // use dictionary.json to change any word on the displayed site
+
+          for (const word in dictionary){
+            const replacementWord = dictionary[word]
+            const originalWord = word
+            const regex = new RegExp(originalWord, 'g')
+
+            htmlContent = htmlContent.replace(regex, replacementWord)
+          }
+
+          return new Response(htmlContent, {
             headers: {
               'Content-Type' : 'text/html',
             },
