@@ -26,7 +26,7 @@ const server = Bun.serve({
         content = content.replace(regex, replacementWord)
       }
 
-      // check the file extention of the url to determine the conent type
+      // check the file extension to determine the content type of the resource being requested
       let contentType = ''
 
       if (url.includes('.css')){
@@ -37,7 +37,7 @@ const server = Bun.serve({
         contentType = 'application/javascript'
       } else if  (url.includes('.svg')) {
         contentType = 'image/svg+xml'
-        // check if this either a request for the home page or for any other page that contains .html
+        // check if this is either a request for the home page or for any other page that contains .html
       } else if (url.includes('.html') || url === '/'){
         contentType = 'text/html'
       }
