@@ -8,14 +8,13 @@ const server = Bun.serve({
   port: 36107,
   fetch: async (request) => {
     try {
-    
-      // Remove the 'http://localhost:36107' part from the request URL
+      // remove the 'http://localhost:36107' part from the request URL
       const url = request.url.replace('http://localhost:36107', '')
 
-      // Fetch data from the url which is a combination of the host URL and the cleaned URL  
+      // fetch data from the url which is a combination of the host URL and the cleaned URL  
       const res = await fetch(`https://${host}${url}`)
 
-      // Extract the text content from the response
+      // extract the text content from the response
       let content = await res.text()
 
       // use dictionary.json to change any word on the displayed site 
@@ -42,14 +41,14 @@ const server = Bun.serve({
         contentType = 'text/html'
       }
 
-      // Create a new Response object with the content and Content-Type headers
+      // create a new Response object with the content and Content-Type headers
       return new Response(content, {
         headers: {
           'Content-Type' : `${contentType}`,
         },
       })
       
-      
+      // catch errors
     } catch (error) {
       console.log('Error', error)
       return new Response('Error', { status: 500 })
