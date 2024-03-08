@@ -1,14 +1,16 @@
-# Description
+#Bun Proxy Server Solution
+
+## Description
 This repository presents a comprehensive solution for deploying a proxy server using Bun.js (https://bun.sh/) to address a simulated client demo task. The primary objective of this task is to effectively showcase a client's website (www.dow.com) via a locally hosted Bun server while dynamically altering specific words on the displayed site using a dictionary. Furthermore, the solution encompasses robust handling of diverse file types and content formats to ensure a seamless end-user experience.
 
-# Task Overview
+## Task Overview
 The task at hand involves:
 
 * Displaying the client's website (www.dow.com) accurately via a local Bun server.
 * Dynamically modifying specific words on the displayed site using a dictionary.
 * Ensuring smooth handling of various file types and content formats to maintain a cohesive user experience.
 
-# Solution
+## Solution
 Implemented in JavaScript, the solution leverages Bun.js to execute the following functionalities:
 
 * Content Modification: The proxy server fetches content from the client's website and applies predefined word replacements based on the provided dictionary. This dynamic modification enhances the relevance and customization of the displayed content.
@@ -17,7 +19,7 @@ Implemented in JavaScript, the solution leverages Bun.js to execute the followin
 
 * Flexible Configuration: The server logic is encapsulated within a single JavaScript file (server.js), providing flexibility for customization and integration into various environments.
 
-# Usage:
+## Usage:
 
 1. Clone the repository using git clone.
 2. Navigate to the project directory.
