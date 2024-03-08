@@ -13,11 +13,11 @@ The task at hand involves:
 ## Solution
 Implemented in JavaScript, the solution leverages Bun.js to execute the following functionalities:
 
-* Content Modification: The proxy server fetches content from the client's website and applies predefined word replacements based on the provided dictionary. This dynamic modification enhances the relevance and customization of the displayed content.
+* **Content Modification**: The proxy server fetches content from the client's website and applies predefined word replacements based on the provided dictionary. This dynamic modification enhances the relevance and customization of the displayed content.
 
-* File Type Handling: The server intelligently manages different file types such as HTML, CSS, JavaScript, and JSON, ensuring appropriate content types are set for each resource. This meticulous handling guarantees seamless rendering and interaction across diverse content formats.
+* **File Type Handling**: The server intelligently manages different file types such as HTML, CSS, JavaScript, and JSON, ensuring appropriate content types are set for each resource. This meticulous handling guarantees seamless rendering and interaction across diverse content formats.
 
-* Flexible Configuration: The server logic is encapsulated within a single JavaScript file (server.js), providing flexibility for customization and integration into various environments.
+* **Flexible Configuration**: The server logic is encapsulated within a single JavaScript file (server.js), providing flexibility for customization and integration into various environments.
 
 ## Usage:
 
