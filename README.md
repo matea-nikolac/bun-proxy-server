@@ -1,10 +1,21 @@
-# Description:
-This repository contains the solution for creating a proxy server using Bun.js (https://bun.sh/) to assist in a simulated client demo task. The task involves displaying a client's website (www.dow.com) correctly via the local Bun server and using a dictionary to dynamically change specific words on the displayed site. The solution also handles different file types and content types accordingly, ensuring a seamless user experience.
+# Description
+This repository presents a comprehensive solution for deploying a proxy server using Bun.js (https://bun.sh/) to address a simulated client demo task. The primary objective of this task is to effectively showcase a client's website (www.dow.com) via a locally hosted Bun server while dynamically altering specific words on the displayed site using a dictionary. Furthermore, the solution encompasses robust handling of diverse file types and content formats to ensure a seamless end-user experience.
 
-The proxy server is implemented in JavaScript and utilizes Bun.js to fetch content from the client's website, modify it based on predefined rules in a dictionary, and serve the modified content to the user. The server is designed to run on port 36107 by default, providing flexibility for integration into various environments.
+# Task Overview
+The task at hand involves:
 
-# Solution:
-The solution consists of a JavaScript file (server.js) that defines the proxy server logic using Bun.js. Upon receiving requests, the server fetches content from the client's website, applies word replacements based on the provided dictionary, and serves the modified content to the user's browser. Additionally, the server handles different file types such as HTML, CSS, JavaScript, and JSON, ensuring appropriate content types are set for each resource.
+* Displaying the client's website (www.dow.com) accurately via a local Bun server.
+* Dynamically modifying specific words on the displayed site using a dictionary.
+* Ensuring smooth handling of various file types and content formats to maintain a cohesive user experience.
+
+# Solution
+Implemented in JavaScript, the solution leverages Bun.js to execute the following functionalities:
+
+* Content Modification: The proxy server fetches content from the client's website and applies predefined word replacements based on the provided dictionary. This dynamic modification enhances the relevance and customization of the displayed content.
+
+* File Type Handling: The server intelligently manages different file types such as HTML, CSS, JavaScript, and JSON, ensuring appropriate content types are set for each resource. This meticulous handling guarantees seamless rendering and interaction across diverse content formats.
+
+* Flexible Configuration: The server logic is encapsulated within a single JavaScript file (server.js), providing flexibility for customization and integration into various environments.
 
 # Usage:
 
